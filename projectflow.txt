@@ -16,3 +16,20 @@
 12. Then git add-commit-push (we're saving V2 of our data at this point)
 13. Check dvc/git status, everything should be upto date.
 14. Now repeat step 10-12 for v3 of data.
+
+
+git log --oneline <- We get all commit history.
+===============================================
+(dvcEnv) saikat@Saikats-MacBook-Air DVC_Practice_0 % git log --oneline
+284642e (HEAD -> main, origin/main, origin/HEAD) Version 3 we done
+fc8a7e2 we're saving V2 of our data at this point
+bfe030d stop tracking S3
+6dcac2d First version of Data
+aea29b6 before initializing dvc
+d0c0df6 Initial commit
+(dvcEnv) saikat@Saikats-MacBook-Air DVC_Practice_0 % 
+==============================================================
+git checkout <sha-value> <- This command changed it previous data stage.
+So, git checkout 6dcac2d <- Hit enter, so go first version of code.
+==============================================================
+dvc pull <- Command then featch at that version of data in data folder.
