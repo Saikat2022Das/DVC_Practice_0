@@ -211,3 +211,5 @@ __marimo__/
 # Make Data Untracking for DVC
 /data
 
+# S3 Assume AWS or S3 cloud storage
+/S3
